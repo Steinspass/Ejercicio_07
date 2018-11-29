@@ -30,11 +30,10 @@ public class Country {
 
 
     public String getFlagURL() {
-        return MessageFormat.format("http://www.geognos.com/api/en/countries/flag/{0}.png",
-                this.getCountryCode());
+        return MessageFormat.format("http://www.geognos.com/api/en/countries/flag/{0}.png", this.getCountryCode());
     }
 
-    // Importante!! Sobreescribimos el método toString de nuestra clase POJO Country
+    // Importante!!! Sobreescribimos el método toString de nuestra clase POJO Country
     // Para que cuando el Spinner llame internamente cada objeto, use el name para ser mostrado
     // como único valor posible en la lista desplegable
     @Override
